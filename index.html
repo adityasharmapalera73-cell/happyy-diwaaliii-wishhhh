@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhu Wali Diwali 💖</title>
+<style>
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #ffcce0);
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  overflow:hidden;
+  text-align:center;
+}
+.page {
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+  padding:20px;
+  box-sizing:border-box;
+  animation:fadeIn 0.6s ease;
+}
+.page.active { display:flex; }
+button {
+  margin:10px;
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:#fff;
+  color:#ff4081;
+  font-size:1.1em;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover { background:#ffe6eb; transform:scale(1.05); }
+
+h1,h2,h3,p { margin:10px; }
+.sticker { font-size:3em; margin:10px 0; animation:pop 1s ease infinite; }
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.popText { display:inline-block; animation:pop 1s ease infinite; }
+</style>
+</head>
+<body>
+
+<!-- Pages -->
+<div class="page active" id="page1">
+  <h1 class="popText">💖 Happy Diwali My Love 💖</h1>
+  <p>You light up my world like no one else ✨🪔</p>
+  <p>Your smile is my favorite decoration 💕🎇</p>
+  <div class="sticker">😻🌹</div>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page2">
+  <h1 class="popText">Beautiful You 🌸</h1>
+  <p>Your laugh is my sweetest melody 🎶💞</p>
+  <p>Your presence fills every corner of my heart 🫶💖</p>
+  <div class="sticker">💐💫</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page3">
+  <h1 class="popText">Special Spark ✨</h1>
+  <p>Every day with you feels magical 🌟❤️</p>
+  <p>You are my sunshine even in cloudy moments 🌈💛</p>
+  <div class="sticker">🕯️🌸</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page4">
+  <h1 class="popText">My Inspiration 🌹</h1>
+  <p>Your love motivates me to be my best 🫶💫</p>
+  <p>Forever grateful for your warmth & care 💕🔥</p>
+  <div class="sticker">💖🫂</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page5">
+  <h1 class="popText">A LETTER FOR YOU ✉️</h1>
+  <p style="font-family: 'Courier New', Courier, monospace; font-size:1.3em;">MY DEAREST BiWi JI,</p>
+  <p style="font-family: Georgia, serif; font-size:1.2em;">I'm sorry for the moments I hurt you. You mean everything to me — and I just want your smile back. ♥</p>
+  <p style="font-family: 'Lucida Handwriting', cursive; font-size:1.2em;">With all my love — Your Kuchupuchu ♥</p>
+  <div class="sticker">💌💖</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page6">
+  <h1 class="popText">Diwali Wishes 🪔💫</h1>
+  <p>🪔💫 Happy Diwali, My Love 💍❤️</p>
+  <p>Happy Diwali to the light of my life, my beautiful wife 🌟💖</p>
+  <p>Just like diyas brighten every corner, your love fills my heart with endless warmth and glow 🕯️💞</p>
+  <div class="sticker">🎆🌙</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page7">
+  <h1 class="popText">Forever Mine 💕</h1>
+  <p>You are my reason to smile, my peace in chaos 🫶💋</p>
+  <p>May this Diwali bring us more love, laughter, and countless memories 🎇🤍</p>
+  <div class="sticker">💖🕯️</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page8">
+  <h1 class="popText">Endless Love 💞</h1>
+  <p>No light can shine brighter than you in my life 🌙✨</p>
+  <p>You’re my real Diwali — my blessing, my everything ❤️♾️</p>
+  <div class="sticker">💐🎇</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page9">
+  <h1 class="popText">Shayari ✨</h1>
+  <p>Zindagi hai meri, tu aasman mera</p>
+  <p>Mai hun ek andhera aur tu savera hai mera</p>
+  <div class="sticker">💞🕯️</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page10">
+  <h1 class="popText">I love youuuu so muchhh 💞💍💫</h1>
+  <p style="font-size:1.3em; font-family:'Lucida Handwriting', cursive;">FOR MY LOVE ♦<br>Thank You FOR BEING MINE ♥<br>I hope this little space made you smile. You are my favorite part of every day —<br>made with ♥ and sprinkles — forever yours ♥</p>
+  <div class="sticker">🌹🎆💖</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page11">
+  <h1 class="popText">My Queen 👑💖</h1>
+  <p>You light up my life brighter than any festival 🎇💞</p>
+  <p>Your love is my treasure 💝🪔</p>
+  <div class="sticker">💎🌸</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page12">
+  <h1 class="popText">Special Moments 🌟</h1>
+  <p>Every memory with you is a sparkle in my heart ✨💛</p>
+  <div class="sticker">🫶💐</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page13">
+  <h1 class="popText">Our Love Story 📖💖</h1>
+  <p>From strangers to best friends, to lovers forever 🫂💞</p>
+  <div class="sticker">🌹🕯️</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page14">
+  <h1 class="popText">Diwali Heartfelt Wish 🪔💖</h1>
+  <p>🪔💫 Happy Diwali, My Love 💍❤️</p>
+  <p>Happy Diwali to the light of my life, my beautiful wife 🌟💖</p>
+  <p>Just like diyas brighten every corner, your love fills my heart with endless warmth and glow 🕯️💞</p>
+  <p>You are my reason to smile, my peace in chaos, and my forever happiness 🫶💋</p>
+  <p>May this Diwali bring us more love, laughter, and countless memories together 🎆🤍</p>
+  <p>No light can ever shine brighter than your presence in my life 🌙✨</p>
+  <p>You’re my real Diwali — my blessing, my everything ❤️♾️</p>
+  <p>Wishing you a Diwali as magical and radiant as your beautiful heart 💫🌸</p>
+  <p>Love you endlessly, my queen 👑💖</p>
+  <div class="sticker">🎆💖🌸</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page15">
+  <h1 class="popText">Forever Together ♾️💞</h1>
+  <p>Thank you for being mine, today and always ♥</p>
+  <div class="sticker">🌹💫🫶</div>
+  <button onclick="prevPage()">⬅️ Back</button>
+</div>
+
+<script>
+let current = 1;
+const total = 15;
+function showPage(num){
+  for(let i=1;i<=total;i++){
+    document.getElementById('page'+i).classList.remove('active');
+  }
+  document.getElementById('page'+num).classList.add('active');
+}
+function nextPage(){ if(current<total){ current++; showPage(current); } }
+function prevPage(){ if(current>1){ current--; showPage(current); } }
+</script>
+
+</body>
+</html>
